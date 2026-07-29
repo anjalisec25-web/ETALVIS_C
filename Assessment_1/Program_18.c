@@ -1,18 +1,12 @@
-//Get a number from the user and subtract 5 from that number if the number is odd,then print the result. Do not use "if".
+//Get a two-digit from the user,make the ten's digit 1, and then print it.
 
 #include <stdio.h>
 int main(){
-    int num;
-    printf("Enter a number:");
+    int num,ones,result;
+    printf("Enter a two digit number:");
     scanf("%d",&num);
-    switch(num % 2){
-        case 1:
-           num=num-5;
-           break;
-
-        case 0:
-           break;
-    }
-    printf("Output:%d",num);
+    ones=num%10;
+    result=(1*10)+ones;
+    printf("Output:%d",result);
     return 0;
 }

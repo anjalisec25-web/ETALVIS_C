@@ -1,15 +1,15 @@
-//Get a two digit number from the user and print the reverse of the number.
+//Get a three-digit number from the user and print the sum of the digits.
 
 #include <stdio.h>
 int main(){
-    int num,rev=0,digit;
-    printf("Enter a two digit number:");
+    int num,sum=0,digit;
+    printf("Enter a three digit number:");
     scanf("%d",&num);
     while(num!=0){
         digit=num%10;
-        rev=(rev*10)+digit;
+        sum=sum+digit;
         num=num/10;
     }
-    printf("Reverse:%d",rev);
+    printf("Output:%d",sum);
     return 0;
 }

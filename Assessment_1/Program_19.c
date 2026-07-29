@@ -1,19 +1,13 @@
-//Get a number from the user and subtract 5 from that number if the number's ten's position digit is odd,then print the result.Do not use "if".
+//Get a three-digit number from the user, make the one's digit 2,and then print it.
 
 #include <stdio.h>
 int main(){
-    int num,tens=0;
-    printf("Enter a number:");
+    int num,hundreds,tens,result=0;
+    printf("Enter a three digit number:");
     scanf("%d",&num);
+    hundreds=(num/10)/10;
     tens=(num/10)%10;
-    switch(tens%2==0){
-        case 0:
-           break;
-
-        case 1:
-           num=num-5;
-           break;
-    }
-    printf("Output:%d",num);
+    result=(hundreds*100)+(tens*10)+2;
+    printf("Output:%d",result);
     return 0;
 }

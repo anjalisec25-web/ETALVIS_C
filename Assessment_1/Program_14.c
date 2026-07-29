@@ -1,15 +1,15 @@
-//Get a four -digit number from the user and only reverse the first two digit of the number,then print the number.
+//Get a three digit number from the user and print the reverse of the number.
 
 #include <stdio.h>
 int main(){
-    int num,hundreds,thousands,tens,ones,result=0;
-    printf("Enter a four digit number:");
+    int num,digit,rev=0;
+    printf("Enter a three digit number:");
     scanf("%d",&num);
-    ones=num%10;
-    tens=(num/10)%10;
-    hundreds=(num/100)%10;
-    thousands=num/1000;
-    result=(thousands*1000)+(hundreds*100)+(ones*10)+(tens*1);
-    printf("Output:%d",result);
+    while(num!=0){
+        digit=num%10;
+        rev=(rev*10)+digit;
+        num=num/10;
+    }
+    printf("Reverse:%d",rev);
     return 0;
 }

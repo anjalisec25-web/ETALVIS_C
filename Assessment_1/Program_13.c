@@ -1,9 +1,9 @@
-//Get a three digit number from the user and print the reverse of the number.
+//Get a two digit number from the user and print the reverse of the number.
 
 #include <stdio.h>
 int main(){
-    int num,digit,rev=0;
-    printf("Enter a three digit number:");
+    int num,rev=0,digit;
+    printf("Enter a two digit number:");
     scanf("%d",&num);
     while(num!=0){
         digit=num%10;
