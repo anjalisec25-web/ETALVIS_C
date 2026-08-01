@@ -7,11 +7,6 @@ int main(){
     scanf("%d",&num);
     tens=num/10;
     ones=num%10;
-    if(tens==ones){
-        printf("Output:1");
-    }
-    else{
-        printf("ouput:0");
-    }
+    printf("%d",tens==ones);
     return 0;
 }

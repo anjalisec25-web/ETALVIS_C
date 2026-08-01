@@ -5,11 +5,6 @@ int main(){
     int num;
     printf("Enter a number:");
     scanf("%d",&num);
-    if(num==50){
-        printf("Output:1");
-    }
-    else{
-        printf("Output:0");
-    }
+    printf("%d",num==50);
     return 0;
 }
