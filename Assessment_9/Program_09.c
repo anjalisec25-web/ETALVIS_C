@@ -1,4 +1,4 @@
-//Get 5 numbers from user,remove the odd numbers and create a new array then print the same.
+//Get 5 numbers from the user,remove the even numbers,create a new array,and print the same.
 
 #include <stdio.h>
 int main(){
@@ -8,10 +8,9 @@ int main(){
         scanf("%d",&a[i]);
     }
     for(i=0;i<n;i++){
-        if(a[i]%2==0){
+        if(a[i]%2!=0){
             b[j]=a[i];
             j++;
-
         }
     }
     printf("New Array,\n");
